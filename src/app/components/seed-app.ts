@@ -1,12 +1,27 @@
 import {Component} from 'angular2/core';
+import {Hero} from "./hero";
 @Component({
   selector: 'seed-app',
-  templateUrl: 'app/components/seed-app.html'
+  templateUrl: 'app/components/seed-app.html',
+  styleUrls:["app/components/site.css"]
 })
 export class SeedApp {
-  name:string;
-  constructor() {
-    this.name="hello world angular 2";
-  }
-
+    public title = 'Tour of Heroes';
+    public heroes = HEROES;
+    public selectedHero: Hero;
+    onSelect(hero: Hero) {
+      this.selectedHero = hero;
+ }
 }
+var HEROES: Hero[] = [
+  { "id": 11, "name": "Mr Nicee" },
+  { "id": 12, "name": "Narco" },
+  { "id": 13, "name": "Bombasto" },
+  { "id": 14, "name": "Celeritas" },
+  { "id": 15, "name": "Magneta" },
+  { "id": 16, "name": "RubberMan" },
+  { "id": 17, "name": "Dynama" },
+  { "id": 18, "name": "Dr IQ" },
+  { "id": 19, "name": "Magma" },
+  { "id": 20, "name": "Tornado" }
+];
