@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/angular/angular2-seed#readme",
   "devDependencies": {
-    "ts-loader": "^0.8.1",
+    "ts-loader": "^9.2.5",
     "typescript": "^1.8.9",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
